@@ -1,54 +1,54 @@
 *{
-    font-size: 40px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: white;
+    text-align: center;
 }
-
 body{
     background-color: black;
 }
-.play{
-    /* border: 2px solid red; */
+.container{
     margin:10px 10%;
-    padding: 20px;
-    min-height:650px;
+}
+.userchoices,.comchoices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btns{
+    all:unset;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 6px;
+    height: 100px;
+    width: 100px;
+}
+.results{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
 }
-
-.pbtn{
-    height: 130px;
-    width: 130px;
-    cursor: pointer;
-    border-radius: 20%;
-    /* margin:0px 12%; */
+.cscore,.uscore{
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    height: 100px;
+    width: 120px;
+    margin: 5px;
 }
-h2{
-    width: 100%;
-    text-align: center;
+.results>div>h3,h1{
+    color: black;
 }
-#rbtn,#crbtn{
+.rock{
     background-image: url(images/therock.png);
     background-size: contain;
 }
-#pprbtn,#cpprbtn{
+.paper{
     background-image: url(images/paper.png);
     background-size: contain;
 }
-#scbtn,#cscbtn{
-    background-color: #fbf6f6;
+.scissor{
     background-image: url(images/scissors.png);
-    background-size:contain;
-    background-repeat:no-repeat ;
-    background-position: center;
-}
-h1{
-    margin: 50px;
-    text-align: center;
-}
-
-.pbtn:hover{
-    box-shadow: 0px 0px 100px 0px rgb(173, 173, 173);
+    background-size: contain;
+    background-repeat: no-repeat;
 }

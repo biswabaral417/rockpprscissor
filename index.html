@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROCK PAPER SCISSORS</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">   
+    <title>rockpprscissor</title>
 </head>
-
 <body>
-    <!-- left empty for now -->
-    <div>
-        <h1>play rock paper scissor against computer</h1>
-        <div class="play">
-            <button type="button" class="pbtn" id="rbtn" onclick="rock()"></button>
-            <button type="button" class="pbtn" id="pprbtn" onclick="paper()"></button>
-            <button type="button" class="pbtn" id="scbtn" onclick="scissor()"></button>
-            <h2>computer choices</h2>
-            <button type="button" class="pbtn" id="crbtn"></button>
-            <button type="button" class="pbtn" id="cpprbtn"></button>
-            <button type="button" class="pbtn" id="cscbtn"></button>
-            <h2 id="resulttxt">&nbsp;</h2>
+    <h2>rock paper scissor</h2>
+    <div class="container">
+        <h2>user</h2>
+        <div class="userchoices">
+            <button id="rock" class="btns rock ubtn"></button>
+            <button id="paper" class="btns paper ubtn"></button>
+            <button id="scissor"    class="btns scissor ubtn"></button>
+        </div>
+        <h2>computer</h2>
+        <div class="comchoices">
+            <button id="crock" class="btns rock"></button>
+            <button id="cpaper" class="btns paper"></button>
+            <button id="cscissor"    class="btns scissor"></button>
+        </div>
+        <h2>results</h2>
+        <div class="results">
+            <div class="uscore">
+                <h3>user</h3>
+                <h1 id="usr">0</h1>
+            </div>
+            <div class="cscore">
+                <h3>computer</h3>
+                <h1 id="comp">0</h1>
+            </div>
         </div>
     </div>
 </body>
-<script src="index.js">
-
-</script>
-
+<script src="index.js"></script>
 </html>
