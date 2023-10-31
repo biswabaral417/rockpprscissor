@@ -58,9 +58,6 @@ function scores(result) {
         
 
     }
-       setInterval(() => {
-        window.alert(result)
-    }, 100);
 
 }
 function borders(uc, cc) {
@@ -77,7 +74,13 @@ game.forEach(element => {
         let uc = element.getAttribute("id");
         borders(uc, cc);
         let result = compare(cc,uc);
-        scores(result)
+        scores(result);
+        
+        setInterval(() => {
+        window.alert(result)
+    }, 100);
+
+        
     });
 });
 
