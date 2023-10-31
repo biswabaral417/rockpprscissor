@@ -1,3 +1,4 @@
+console.log("update1");
 let game = document.querySelectorAll('.ubtn');
 let allbtns = document.querySelectorAll('.btns')
 
@@ -74,9 +75,8 @@ game.forEach(element => {
         let uc = element.getAttribute("id");
         borders(uc, cc);
         let result = compare(cc,uc);
-        setTimeout(() => {
-            window.alert(result)
-            }, 1000);
+        setTimeout(() => window.alert(result)
+            , 1000);
         scores(result);
     });
 });
