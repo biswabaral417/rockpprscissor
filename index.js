@@ -41,7 +41,7 @@ function compare(computer_choice,user_choice) {//this function compares and dete
 let u_score = 0;
 let c_score = 0;
 function scores(result) {
-    console.log(result);
+    window.alert(result);
     if (result == "win") {
         u_score+=1;
         u_scoret.textContent=`${u_score}`
